@@ -29,4 +29,11 @@ const doubleNumbers = number.map( num => num *2)
 console.log( doubleNumbers)
 
 
+// Exemplo pratico 'Conversor Fahrenheit para Celsius
+
+const fahrenheit = [ 0, 10, 30, 50 ]
+
+const celsius = fahrenheit.map(function(temp){
+    return (temp -32) * 5/9
+})
 
