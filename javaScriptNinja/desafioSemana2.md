@@ -35,19 +35,25 @@ Crie uma função com as seguintes características:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function trheeArgs(a, b, c){
+    if(c === undefined){
+        return 'Preencha todos os argumentos'
+    }else {
+        return a * b * c + 2;
+    }
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+trheeArgs(2,1);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+// Preencha todos os argumentos
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+treeArgs(2,1,2);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+// 6
 
 /*
 Crie uma função com as seguintes características:
