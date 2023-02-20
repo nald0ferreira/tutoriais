@@ -1,3 +1,7 @@
+# Desafio Semana #1
+
+```js
+
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
 function soma(a,b){
     return a + b;
