@@ -1,3 +1,4 @@
+// Calcular imc
 function calcularImc(peso, altura){
     return peso / Math.pow(altura,2);
 }
@@ -19,6 +20,3 @@ function classificarImc(imc){
     const imc = calcularImc(peso, altura);
     console.log(classificarImc(imc));
 })();
-
-
-
