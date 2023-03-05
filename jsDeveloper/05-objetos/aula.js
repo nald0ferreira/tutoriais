@@ -1,11 +1,19 @@
-const pessoa = {
-    nome: 'Vitor J Guerra',
-    idade: 25,
+class Pessoa {
+    nome;
+    idade;
 
-    descrever: function (){
+    descrever(){
         return `Meu nome é ${this.nome} e minha idade é ${this.idade}`;
-        
     }
-
 }
-console.log(pessoa.descrever());
+
+const vitor = new Pessoa();
+vitor.nome = "Vitor J Guerra";
+vitor.idade = 25;
+
+const renam = new Pessoa();
+vitor.nome = "Renam J Paula";
+vitor.idade = 30;
+
+vitor.descrever();
+
