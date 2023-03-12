@@ -79,7 +79,10 @@ Crie um método chamado `obterMarcaModelo`, que retorne:
 "Esse carro é um [MARCA] [MODELO]"
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
-?
+ const obterMarcaModelo = () => {
+    obterModelo();
+    obterMarca();
+ }
 
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
