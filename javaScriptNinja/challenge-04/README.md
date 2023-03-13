@@ -101,13 +101,15 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 citado acima, no lugar de "pessoas".
 */
 
-const entrarPessoas = (pessoasDentro) =>{
-    if(carro.quantidadePessoas < 5){
-        carro.quantidadePessoas += pessoasDentro;
-        return `Já temos ${carro.quantidadePessoas} pessoas no carro`
-    }else{
-        return `O carro já está lotado`
-    }
+const entrarPessoas = (entra) => {
+	let lugares = (carro.assentos - carro.quantidadePessoas) -1;
+	 carro.quantidadePessoas += entra;
+	if(carro.quantidadePessoas < 4) {
+	return `Já temos ${carro.quantidadePessoas} pessoas no carro e restam ${lugares} lugares`
+	}else if(carro.quantidadePessoas == 4){
+		return `Quase cheio resta apenas um lugar no carro`;
+	}
+		return 'Ops! Carro lotado!';
 }
 
 /*
