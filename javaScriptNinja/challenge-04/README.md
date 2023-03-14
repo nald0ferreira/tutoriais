@@ -79,8 +79,7 @@ Crie um método chamado `obterMarcaModelo`, que retorne:
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
  const obterMarcaModelo = () => {
-    obterModelo();
-    obterMarca();
+    return `Este carro é um ${obterModelo()}  ${obterMarca()}`
  }
 
 /*
