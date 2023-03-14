@@ -5,12 +5,11 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-let isTruthy(valor){
-    if(valor === false){
-        return 'false';
-    }else{
-        return 'true'
+let isTruthy = (valor) => {
+    if(valor === true){
+        return true;
     }
+    return false
 }
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
