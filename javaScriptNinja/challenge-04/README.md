@@ -102,12 +102,11 @@ citado acima, no lugar de "pessoas".
 const entrarPessoas = (entra) => {
 	let lugares = (carro.assentos - carro.quantidadePessoas) -1;
 	 carro.quantidadePessoas += entra;
-	if(carro.quantidadePessoas < 4) {
-	return `Já temos ${carro.quantidadePessoas} pessoas no carro e restam ${lugares} lugares`
-	}else if(carro.quantidadePessoas == 4){
-		return `Quase cheio resta apenas um lugar no carro`;
+	if(carro.quantidadePessoas <= 4) {
+    let plural = carro.quantidadePessoas === 1 ? 'pessoa' : 'pessoas';    
+	return `Já temos ${carro.quantidadePessoas} ${plural} no carro e restam ${lugares} lugares`
 	}
-		return 'Ops! Carro lotado!';
+    return 'Ops! Carro lotado!';
 }
 
 /*
