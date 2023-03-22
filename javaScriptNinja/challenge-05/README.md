@@ -16,7 +16,7 @@ function retorna(){
 /*
 Imprima o segundo índice do array retornado pela função criada acima.
 */
-// ?
+retorna(myVar[1]);
 
 /*
 Crie uma função que receba dois parâmetros: o primeiro, um array de valores; e o
@@ -24,12 +24,14 @@ segundo, um número. A função deve retornar o valor de um índice do array que
 no primeiro parâmetro. O índice usado para retornar o valor, deve ser o número passado no
 segundo parâmetro.
 */
-// ?
+function params(myVar,b){
+    return myVar[b];
+}
 
 /*
 Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 */
-// ?
+ var pessoa = ['Ednaldo', 77, 1.75, false, 'Caçapava'];
 
 /*
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
