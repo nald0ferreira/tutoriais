@@ -37,7 +37,9 @@ Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// ?
+funtion retorna (){
+    return pessoa[5];
+}
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
@@ -53,7 +55,29 @@ propriedades:
 - Se o parâmetro não for passado, a função deve retornar o objeto com todos
 os livros.
 */
-// ?
+function book(nomeLivro){
+    let livros {
+        O Abapuru: {
+            quantidadePaginas: 300,
+            autor: 'Machado de Assis',
+            editora: 'Salvat',
+        },
+        O Rio de Fogo: {
+            quantidadePaginas: 234,
+            autor: 'Livia Hummate',
+            editora: 'Estante',
+        },
+        Vozes Vivas: {
+            quantidadePaginas: 250,
+            autor: 'Ulisse Caimbre',
+            editora: 'Moderna',
+        }
+
+    }
+    if(nomeLivro !== null){
+        return nomeLivro
+    }
+}
 
 /*
 Usando a função criada acima, imprima o objeto com todos os livros.
