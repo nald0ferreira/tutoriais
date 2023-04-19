@@ -4,8 +4,8 @@
 
 #print('Você nasceu dia '+  dia + ' de ' + mes + ' de ' + ano)
 
+texto = str(('O resultado é : '))
+primeiro = int(input('um: '))
+segundo = int(input('dois: '))
 
-primeiro = input.__init__('um')
-segundo = input.__init__('dois')
-
-print(primeiro + segundo)
+print(texto, primeiro + segundo)
