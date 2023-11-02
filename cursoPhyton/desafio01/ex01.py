@@ -8,4 +8,5 @@ texto = str(('O resultado é : '))
 primeiro = int(input('um: '))
 segundo = int(input('dois: '))
 
+#teste do conexão da pasta
 print(texto, primeiro + segundo)
