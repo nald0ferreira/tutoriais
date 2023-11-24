@@ -6,20 +6,17 @@ um único parâmetro como argumento. Essa função deve retornar `true` se o
 equivalente booleano para o valor passado no argumento for `true`, ou `false`
 para o contrário.
 */
-let isTruthy = (valor) => {
-    if(valor === true){
-        return true;
-    }
-    return false
-}
+
+
 
 // Invoque a função criada acima, passando todos os tipos de valores `falsy`.
-isTruthy(2 < 1);
+
+
 
 /*
 Invoque a função criada acima passando como parâmetro 10 valores `truthy`.
 */
-isTruthy(2 !== 2):
+
 
 /*
 Declare uma variável chamada `carro`, atribuindo à ela um objeto com as
@@ -33,55 +30,40 @@ seguintes propriedades (os valores devem ser do tipo mostrado abaixo):
 - `assentos` - Number - cinco por padrão
 - `quantidadePessoas` - Number - zero por padrão
 */
-let carro = {
-    marca: 'GM',
-    modelo: 'prisma',
-    placa: 'EAN0107',
-    ano: 2007,
-    cor: 'prata',
-    quantasPortas: 4,
-    assentos: 5,
-    quantidadePessoas: 0,
-    
-}
+
+
 
 /*
 Crie um método chamado `mudarCor` que mude a cor do carro conforme a cor
 passado por parâmetro.
 */
-function mudaCor(cor) { 
-    carro.cor = cor;
-}
+
+
 
 /*
 Crie um método chamado `obterCor`, que retorne a cor do carro.
 */
-const obterCor = () => {
-    return carro.cor
-}
+
+
 
 /*
 Crie um método chamado `obterModelo` que retorne o modelo do carro.
 */
-const obterModelo = () => {
-    return carro.modelo;
-}
+
+
 
 /*
 Crie um método chamado `obterMarca` que retorne a marca do carro.
 */
-const obterMarca = () => {
-    return carro.marca;
-}
+
 
 /*
 Crie um método chamado `obterMarcaModelo`, que retorne:
 "Esse carro é um [MARCA] [MODELO]"
 Para retornar os valores de marca e modelo, utilize os métodos criados.
 */
- const obterMarcaModelo = () => {
-    return `Este carro é um ${obterModelo()}  ${obterMarca()}`
- }
+
+
 
 /*
 Crie um método que irá adicionar pessoas no carro. Esse método terá as
@@ -100,15 +82,8 @@ mostrar quantos assentos ainda podem ser ocupados, com a frase:
 citado acima, no lugar de "pessoas".
 */
 
-const entrarPessoas = (entra) => {
-	let lugares = (carro.assentos - carro.quantidadePessoas) -1;
-	 carro.quantidadePessoas += entra;
-	if(carro.quantidadePessoas <= 4) {
-    let plural = carro.quantidadePessoas === 1 ? 'pessoa' : 'pessoas';    
-	return `Já temos ${carro.quantidadePessoas} ${plural} no carro e restam ${lugares} lugares`
-	}
-    return 'Ops! Carro lotado!';
-}
+
+
 
 /*
 Agora vamos verificar algumas informações do carro. Para as respostas abaixo,
@@ -117,38 +92,37 @@ adicionando comentários _inline_ ao lado com o valor retornado, se o método
 retornar algum valor.
 
 Qual a cor atual do carro?
-*/
-//prata
+
+
 
 // Mude a cor do carro para vermelho.
-carro.cor = 'vermelho';
+
 
 // E agora, qual a cor do carro?
-// vermelho 
+
 
 // Mude a cor do carro para verde musgo.
-carro.cor = 'verde musgo'
+
 
 // E agora, qual a cor do carro?
-// verde musgo
+
 
 // Qual a marca e modelo do carro?
-// prisma; GM
+
 
 // Adicione 2 pessoas no carro.
-carro.entrarPessoas(2)
+
 
 // Adicione mais 4 pessoas no carro.
-carro.entrarPessoad(4);
+
 
 // Faça o carro encher.
-carro.entrarPessoas(5);
+
 
 // Tire 4 pessoas do carro.
-carro.entrarPessoas(-4)
+
 
 // Adicione 10 pessoas no carro.
-carro.entrarPessoas(10);
+
 
 // Quantas pessoas temos no carro?
-//17
