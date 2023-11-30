@@ -1,6 +1,3 @@
-# Desafio Semana #1
-
-```js
 // Declarar uma variável chamada `myvar`, sem valor.
 var myVar 
 
@@ -33,10 +30,12 @@ console.log(soma === myVar);
 
 
 // Digite o código que verifica se a variável `myvar` é menor ou igual à variável `soma`.
-
+console.log( myVar <= soma);
 
 // Crie uma função chamada `divisao` que receba como parâmetro dois números, e retorne o resultado da divisão entre eles.
+function divisao(a,b){
+    return a/b;
+}
 
 // Invoque a função criada acima, passando os parâmetros 10 e 2.
-
-```
+divisao();
