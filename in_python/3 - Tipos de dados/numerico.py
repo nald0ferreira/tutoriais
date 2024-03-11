@@ -9,3 +9,7 @@ int(9.888)
 
 round(9.888, 2)  // 9.89
 '''
+
+from decimal import *
+
+d = Decimal('0.10')
