@@ -16,4 +16,14 @@ print(divisiveis_por_20)
 
 texto = 'O arco-íris é colorido, o céu é azul, a Terra do meu quintal é marron'
 print(texto.split())
+print(texto.split(','))
+
+# A função replace recebe dois argumentos o primeiro será substituido pelo segundo
+# A função lower transforma todas as letras em minúsculas
+def limpaTexto(palavra):
+  return palavra.replace(',','').lower()
+
+palavras_texto = [limpaTexto(palavra) for palavra in texto.split()]
+
+print(palavras_texto)
 
